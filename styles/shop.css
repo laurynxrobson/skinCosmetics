@@ -1,0 +1,69 @@
+/* Navigation Bar */
+.navbar {
+    background-color: white;
+}
+
+/* Formatting Links */
+.nav-link,
+.back-to-top {
+    color: black;
+}
+
+/* Hover */
+.nav-link:hover,
+.contact:hover,
+.support:hover,
+.back-to-top:hover,
+.brand-name {
+    color: wheat;
+}
+
+.card-img-top:hover {
+    opacity: 0.5;
+}
+
+a:hover,
+.back-to-top {
+    text-decoration: none;
+}
+
+/* Social Media */
+.social-media-logos {
+    width: 35px;
+    height: auto;
+}
+
+/* MAIN' */
+.main {
+    padding: 5%;
+    background-color: wheat;
+    animation-name: main;
+    animation-duration: 4s;
+}
+
+/* Text Formatting */
+h1,
+.brand-name {
+    font-family: 'Yeseva One',
+        cursive;
+}
+
+.card-text,
+.container-fluid,
+h1,
+.brand-name,
+details {
+    text-align: center;
+}
+
+/* Item Images */
+.item {
+    border: white solid;
+    padding: 0.1%;
+    margin-left: 50px;
+}
+
+.card-item {
+    margin: 90px auto;
+}
+

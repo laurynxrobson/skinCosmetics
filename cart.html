@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD -->
+
+<head>
+   <!-- Meta Tags -->
+   <meta charset="utf-8">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+   <!-- External CSS -->
+   <link rel="stylesheet" href="styles/shop.css" type="text/css">
+
+   <!-- Google Fonts -->
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Yeseva+One&display=swap"
+      rel="stylesheet">
+
+   <!-- Title -->
+   <title>skin | Shop</title>
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <!-- JavaScript -->
+   <script type="text/javascript" src="js/script.js" async defer></script>
+
+   <!-- BootStrap JavaScript -->
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+   </script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+   </script>
+</head>
+
+<body>
+   <!-- HEADER -->
+   <header id="header">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-light fixed-top justify-content-center">
+         <ul class="nav">
+            <li class="nav-item">
+               <a target="_blank" class="nav-link active" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item mr-5">
+               <a target="_blank" class="nav-link active" href="aboutUs.html">About
+                  Us</a>
+            </li>
+            <!-- Brand Name -->
+            <li class="brand-name ml-5 mr-5">
+               <h1>skin</h1>
+            </li>
+            <li class="nav-item ml-5">
+               <a target="_blank" class="nav-link active" href="login.html">Login</a>
+            </li>
+            <li class="nav-item ml-5">
+               <a class="cartInfo nav-link active" data-toggle="modal" data-target="#cart" href="#">Cart (<span
+                     class="totalCount"></span>)</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <!-- MAIN -->
+   <main class=" main container pt-5">
+      <h1 class="pt-5">Cart</h1>
+      <div class="container-fluid pt-5">
+
+         <!-- Cart -->
+         <div>
+            <table class="showCart table table-borderless table-light"></table>
+         </div>
+
+         <!-- Drop-Down Menu: -->
+         <div class="text-justify pt-3 dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+               Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <a class="dropdown-item" href="#">Lorem ipsum dolor sit amet.</a>
+               <a class="dropdown-item" href="#">Erat pellentesque adipiscing commodo elit at.</a>
+               <a class="dropdown-item" href="#">Mollis aliquam ut porttitor leo.</a>
+            </div>
+         </div>
+
+         <!-- Form -->
+         <form class="pt-3 text-left">
+
+            <!-- Discount Form -->
+            <div class="form-group">
+               <label>Enter the discount code below 'SKIN10' to get 10% off your
+                  order:</label>
+               <input type="text" class="form-control" id="codeInput">
+            </div>
+            <div class="col-auto">
+               <button class="codeBtn btn btn-light">Submit Discount</button>
+            </div>
+
+            <!-- Collection/ Delivery Options -->
+            <div class="form-group pt-3">
+               <select class="collectionOrDelivery custom-select">
+                  <option selected>Select your form of Delivery</option>
+                  <option id="collect" value="0">Click and Collect - FREE</option>
+                  <option id="deliver" value="10-50">Delivery - R10 - R50</option>
+               </select>
+            </div>
+            <!-- Delivery Options -->
+            <div class="delivery form-group pt-3">
+               <!-- <label for="deliveryOptions">Delivery Options</label> -->
+               <select id="deliveryOptions" class="custom-select">
+                  <option value="">Select your delivery option</option>
+                  <option class="option" id="express" value="20"> Express Delivery (2-3 days) - R 20 </option>
+                  <option class="option" id="standard" value="10"> Standard Delivery (5-7 days) - R 10 </option>
+                  <option class="option" id="nextDay" value="50"> Next Day Delivery (2-24 hours) - R50 </option>
+               </select>
+               <div id="20" class="drop-down-show-hide">Express Delivery (2-3 days) - R 20</div>
+               <div id="10" class="drop-down-show-hide">Standard Delivery (5-7 days) - R 10</div>
+               <div id="50" class="drop-down-show-hide">Next Day Delivery (2-24 hours) - R50</div>
+            </div>
+         </form>
+
+         <!-- Total Amounts -->
+         <div class="text-justify">
+            <h6>Total (excluding VAT):<br><span class="cartTotal"></span></h6>
+            <h6>VAT Amount:<br><span class="vatAmount"></span></h6>
+            <h4>Total Amount:<br>R<span class="totalAmount"></span></h4>
+            <!-- Confirmation Button -->
+            <button type="button" class="confirmButton btn btn-light" data-dismiss="modal">Confirm Order</button>
+         </div>
+         <h1 class="thanksBanner pt-5">Thank You for shopping at skin!</h1>
+      </div>
+
+      <!-- Cart Modal -->
+      <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <table class="showCart table table-borderless">
+
+                  </table>
+                  <div class="text-justify">
+                     <h6>Total (excluding VAT): <span class="cartTotal"></span>.00</h6>
+                     <h6>VAT Amount: <span class="vatAmount"></span></h6>
+                     <h4>Total Amount: <span class="totalAmount"></span></h4>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                  <a href="cart.html" type="button" class="btn btn-light" href="">Check Out</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </main>
+   <!-- FOOTER -->
+   <footer class="pt-5">
+      <div class="container pt-5">
+         <div class="row">
+            <div class="col-sm">
+               <!-- Contact -->
+               <h6>Contact</h6>
+               <p class="contact">skincs@skin.com <br></p>
+               <p class="contact">(012) 345 6789<br></p>
+               <p class="contact"> 1 Smith Street, Johannesburg 2000</p>
+            </div>
+            <div class="col-sm">
+               <!-- Keep In Touch -->
+            </div>
+            <div class="col-sm">
+               <!-- Support -->
+               <h6>Support</h6>
+               <p class="support">FAQ <br></p>
+               <p class="support">Stocklist <br></p>
+               <p class="support">Press<br></p>
+               <p class="support">Affiliates<br></p>
+            </div>
+            <div class="col-sm">
+               <!-- Social Media -->
+               <a class="social-media-links" target="_blank" href="https://www.facebook.com/">
+                  <img class="social-media-logos" alt="Responsive image" src="images/Facebook logo.png">
+               </a>
+               <a class="social-media-links" target="_blank" href="https://www.messenger.com/">
+                  <img class="social-media-logos" alt="Responsive image" src="images/Facebook messenger logo.png">
+               </a>
+               <a class="social-media-links" target="_blank" href="https://www.google.com/">
+                  <img class="social-media-logos" alt="Responsive image" src="images/Google logo.png">
+               </a>
+               <a class="social-media-links" target="_blank" href="https://www.pinterest.com/">
+                  <img class="social-media-logos" alt="Responsive image" src="images/Pinterest logo.png">
+               </a>
+               <br>
+               <!-- Back to Top -->
+               <a href="#header" class="back-to-top">Back to Top</a>
+            </div>
+         </div>
+      </div>
+      <!-- Copyright and Terms -->
+      &copy; skin | Cosmetic Store
+   </footer>
+</body>
+
+</html>

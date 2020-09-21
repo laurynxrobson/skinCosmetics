@@ -1,0 +1,60 @@
+/* Navigation Bar */
+.navbar {
+    background-color: white;
+}
+
+/* Formatting Links */
+.nav-link,
+.back-to-top {
+    color: black;
+}
+
+/* Hover */
+.nav-link:hover,
+.contact:hover,
+.support:hover,
+.back-to-top:hover,
+.brand-name {
+    color: wheat;
+}
+
+a:hover,
+.back-to-top {
+    text-decoration: none;
+}
+
+/* Social Media */
+.social-media-logos {
+    width: 35px;
+    height: auto;
+}
+
+/* MAIN' */
+.main {
+    background-color: wheat;
+    padding: 5%;
+    animation-name: main;
+    animation-duration: 4s;
+}
+
+@keyframes main {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: black;
+    }
+}
+/* Text Formatting */
+.container-fluid,
+h1,
+.brand-name {
+    text-align: center;
+}
+
+h1,
+.brand-name {
+    font-family: 'Yeseva One',
+        cursive;
+}
